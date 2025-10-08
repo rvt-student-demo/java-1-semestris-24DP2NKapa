@@ -2,7 +2,7 @@ package rvt;
 
 public class Astrology {
     public static void main(String[] args) {
-        chrismasTree(7);
+        chrismasTree(4);
     }
     public static void printSpaces(double number) {
         for (int i = 0; i < number; i++) {
