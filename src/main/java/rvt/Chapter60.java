@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Chapter60 {
     public static void main(String[] args) {
-        ex4(args);
+        ex5(args);
     }
     public static void ex1(String[] args) {
         int[] val = {0, 1, 2, 3}; 
@@ -72,15 +72,19 @@ public class Chapter60 {
             + (valA[2]+valB[2]) + " " + (valA[3]+valB[3]) );
     }
     public static void ex5(String[] args) {
-        int[] val = {0, 1, 2, 3}; 
+        int[] val = {67, 69, 96, 420, 4, 15, 56, 70}; 
         int temp;
  
         System.out.println( "Original Array: " 
-            + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
+            + val[0] + " " + val[1] + " " + val[2] + " " + val[3] + " " + val[4] + " " + val[5] + " " + val[6] + " " + val[7]);
  
         // reverse the order of the numbers in the array
-  
+        for (int i = 0; i < val.length / 2; i++) {
+            temp = val[i];
+            val[i] = val[val.length - 1 - i];
+            val[val.length - 1 - i] = temp;
+        }
         System.out.println( "Reversed Array: " 
-            + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
+            + val[0] + " " + val[1] + " " + val[2] + " " + val[3] + " " + val[4] + " " + val[5] + " " + val[6] + " " + val[7]);
     }
 }
