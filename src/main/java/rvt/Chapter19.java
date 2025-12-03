@@ -90,5 +90,6 @@ public class Chapter19 {
         for (int i = 0; i < times; i++) {
             System.out.println(aWord.charAt(i));
         }
+        
     }
 }

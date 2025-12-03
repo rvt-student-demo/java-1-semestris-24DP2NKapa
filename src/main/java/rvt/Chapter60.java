@@ -1,5 +1,6 @@
 package rvt;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Chapter60 {
@@ -77,7 +78,9 @@ public class Chapter60 {
  
         System.out.println( "Original Array: " 
             + val[0] + " " + val[1] + " " + val[2] + " " + val[3] + " " + val[4] + " " + val[5] + " " + val[6] + " " + val[7]);
- 
+        
+        System.out.println(Arrays.toString(val));    
+
         // reverse the order of the numbers in the array
         for (int i = 0; i < val.length / 2; i++) {
             temp = val[i];

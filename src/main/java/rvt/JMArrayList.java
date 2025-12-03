@@ -4,7 +4,7 @@ import java.util.*;
 
 public class JMArrayList {
     public static void main(String[] args) {
-        RemoveLast(args);
+        RemoveLast(null);
     }
     public static void OnlyTheseNumbers(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -56,13 +56,12 @@ public class JMArrayList {
             System.out.println(target + " was not found!");
         }
     }
-    public static void RemoveLast(String[] args) {
-        ArrayList<String> strings = new ArrayList<>();
+    public static void RemoveLast(ArrayList<String> strings) {
+        strings = new ArrayList<>();
 
         strings.add("First");
         strings.add("Second");
         strings.add("Third");
-        strings.add("Fourth");
 
         System.out.println(strings);
 
